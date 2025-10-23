@@ -8,7 +8,7 @@ import threading
 Logging_file = 'monitor.log'
 
 # 1. 替换成你自己的 Webhook (关键词模式)
-KEYWORD_WEBHOOK_URL = "https://oapi.dingtalk.com/robot/send?access_token=3ce35f6141115e81b556ad5bc8a7491d76183dbbac40574deddf0a5b63661d4b" 
+KEYWORD_WEBHOOK_URL = "https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxxxxxxxxxxxxxxxx" 
 
 # --- 主机列表配置 ---
 HOSTS = [
@@ -123,7 +123,7 @@ def check_and_alert(stats):
             send_dingtalk_alert_keyword(
                 webhook_url=KEYWORD_WEBHOOK_URL,
                 content=alert_content,
-                at_mobiles=["18296976275"]
+                at_mobiles=["1829xxxxxxx"]
             )
             print(f"【⚠️ {resource} 告警】{ip}: {usage:.2f}% > {threshold}%")
 
@@ -204,4 +204,5 @@ if __name__ == "__main__":
     while True:
         monitor_all_hosts()
         time.sleep(60)  # 每1分钟监控一次
+
     
