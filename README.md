@@ -78,7 +78,7 @@ DISK_THRESHOLD = 95.0
 1. 克隆项目
 
    ```bash
-   git clone https://github.com/yourname/remote-monitor.git
+   git clone https://github.com/uer2022021023/remote-monitor.git
    cd remote-monitor
    ```
 
